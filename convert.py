@@ -26,18 +26,23 @@ def convert(targetZone, timeStr):
     dtconverted = dt.astimezone(targetZone)
     return dtconverted.strftime(fmt)
 
-bjArr = []
+bjArr = ugrad
 bjStartArr = []
 for course in ugrad:
     for time in ugrad[course]["times"]:
         start = time[0]
         start = standard + start + ":00"
+        bjArr[course]["times"][0][0] = convert(bj, start)
 
         end = time[1]
         end = standard + end + ":00"
-    
+        bjArr[course]["times"][0][1] = convert(bj, end)
+        
     bjStartArr.append(convert(bj, start))
-    bjArr.append([convert(bj, start), convert(bj, end)])
+    #bjArr.append([convert(bj, start), convert(bj, end)])
 
 #print(bjArr)
 #print(bjStartArr)
+
+with open("ugrad_bj.json","w") as write:
+    json.dump(bjArr, write, indent = 4)

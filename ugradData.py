@@ -1,13 +1,12 @@
 import json
 
 with open("2020-10-04T20_00_19.json", "r") as read_file:
-    data = json.load(read_file)
+    vergil = json.load(read_file)
     read_file.close()
 
 #put all 0000-4000 level courses in 'undergrad' array
 undergrad = []
-for course in data:
-
+for course in vergil:
     courseId = course["course"]["course_identifier"]
     
     if len(courseId) == 9 or len(courseId) == 10:
@@ -37,9 +36,10 @@ for course in undergrad:
             startT = day["mil_time_from"]
             endT = day["mil_time_to"]
             time = [startT, endT]
-            times.append(time)
+            if startT and endT:
+                times.append(time)
     
-    if len(times) != 0:
+    if times:
         info.update({"size": size})
         info.update({"times": times})
         
@@ -52,4 +52,3 @@ for course in undergrad:
 #write to json
 with open("ugradData.json","w") as write:
     json.dump(alltimeDicts, write, indent = 4)
-
