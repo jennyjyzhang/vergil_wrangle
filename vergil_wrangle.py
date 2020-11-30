@@ -47,9 +47,9 @@ from datetime import datetime, timezone
 import pytz
 from parse import *
 
+#print all timezones in pytz pkg
 # for tz in pytz.all_timezones:
 #     print(tz)
-
 
 #set standard date as 01-01-2020
 standard = "01-01-2020 "
@@ -74,22 +74,4 @@ for course in timeArr:
     
     print(start + "==" + convert(bj, start))
     print(end + "==" + convert(bj, end))
-
-
-
-    
-# fmt = "%Y-%m-%d %H:%M:%S %Z%z"
-# time = "01-01-2020 18:10"
-# dt = datetime.strptime(time, "%d-%m-%Y %H:%M")
-# dt = dt.replace(tzinfo = ny)
-# dtconverted = dt.astimezone(bj)
-# print(dtconverted.strftime(fmt))
-
-
-# def timeFmt(timeEntry):
-#     inputTime = parse(timeEntry).replace(tzinfo=pytz.timezone("US/Eastern"))
-#     convTime = inputTime.astimezone(pytz.timezone("Asia/Shanghai"))
-#     return convTime
-
-
    
