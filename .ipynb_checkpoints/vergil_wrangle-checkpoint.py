@@ -60,7 +60,7 @@ la = pytz.timezone('America/Los_Angeles')
 
 def convert(targetZone, time):
     dt = datetime.strptime(time, "%d-%m-%Y %H:%M:%S")
-    dt = dt.replace(tzinfo = ny)
+    dt = ny.localize(dt)
     dtconverted = dt.astimezone(targetZone)
     return dtconverted.strftime(fmt)
     
