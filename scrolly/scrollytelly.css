@@ -1,9 +1,23 @@
+#my_dataviz {
+ 	display: block;
+ 	margin: auto;
+}
+
 #scrolly-side .scrolly {
-	display: flex;
-	max-width: 60rem;
+	position: relative;
+	max-width: 67vw;
 	margin: 3rem auto;
-	background-color: cornsilk;
+	background-color: white;
 	padding: 1rem;
+}
+
+p {
+	font-family: Georgia;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 * {
@@ -11,20 +25,32 @@
  }
 
 article {
-	padding-right: 1rem;
-	max-width: 30rem;
+	position: relative;
+	padding-left: 36vw;
+	max-width: 22vw;
 }
 	
 .step {
 	min-height: 30vh;
 	margin-top: 20rem;
 	margin-bottom: 20rem;
-	background-color: aquamarine;
+	background-color: transparent;
 	transition: background-color 250ms ease-in-out;
 }
 
+.step p {
+	padding: 20px;
+    font-family: Georgia,serif;
+    font-size: 20px;
+    line-height: 30px;
+    background: hsla(0,0%,100%,.9);
+    box-shadow: 0 2px 5px 0 #e4e4e4;
+    width: calc(100% - 40px);
+    max-width: 470px;
+}
+
 .step:last-of-type {
-	margin-bottom: 0;
+	margin-bottom: 25vh;
 }
 .step.is-active {
 	background-color: gray;
@@ -43,10 +69,13 @@ figure.sticky {
 	position: sticky;
 	width: 100%;
 	height: 50vh;
-	background: silver;
+	background: white;
 	margin: 0;
 	top: 25vh;
 	left: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
 }
 
 .bar-outer {
@@ -65,3 +94,4 @@ figure.sticky {
 	transition: width 1s ease-in-out;
 	background-color: red;
 }
+
