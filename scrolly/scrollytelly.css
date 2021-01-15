@@ -3,11 +3,15 @@
  	margin: auto;
 }
 
+body {
+	background-color: #2B2F77;
+}
+
 #scrolly-side .scrolly {
 	position: relative;
-	max-width: 67vw;
+	max-width: 80vw;
 	margin: 3rem auto;
-	background-color: white;
+	background-color: #2B2F77;
 	padding: 1rem;
 }
 
@@ -26,8 +30,8 @@ p {
 
 article {
 	position: relative;
-	padding-left: 36vw;
-	max-width: 22vw;
+	padding-left: 43vw;
+	max-width: 26vw;
 }
 	
 .step {
