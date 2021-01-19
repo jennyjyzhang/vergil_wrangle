@@ -24,68 +24,96 @@
 	overflow:hidden;
 }
 #g-lede-Artboard_1 p {
-	font-family:georgia,'times new roman',times,serif;
-	line-height:24px;
-	filter:alpha(opacity=100);
-	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-	opacity:1;
-	letter-spacing:0em;
-	font-size:20px;
-	text-align:left;
-	color:rgb(255,255,255);
-	text-transform:none;
-	padding-bottom:0;
-	padding-top:0;
-	mix-blend-mode:normal;
-	font-style:normal;
-	height:auto;
-	position:static;
-}
-#g-lede-Artboard_1 .g-pstyle0 {
-	text-align:center;
-	color:rgb(0,0,0);
-}
-#g-lede-Artboard_1 .g-pstyle1 {
-	font-weight:bold;
-	height:24px;
-	filter:alpha(opacity=90);
-	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-	opacity:0.9;
-}
-#g-lede-Artboard_1 .g-pstyle2 {
-	font-weight:bold;
-}
-#g-lede-Artboard_1 .g-pstyle3 {
-	font-weight:bold;
-	height:24px;
-}
-#g-lede-Artboard_1 .g-pstyle4 {
-	text-align:center;
-}
-#g-lede-Artboard_1 .g-pstyle5 {
-	font-style:italic;
-	text-align:center;
-	color:rgb(123,39,142);
-}
-#g-lede-Artboard_1 .g-pstyle6 {
-	font-style:italic;
-	text-align:center;
-	color:rgb(255,247,220);
-}
-#g-lede-Artboard_1 .g-pstyle7 {
-	font-style:italic;
-	text-align:center;
-	color:rgb(231,197,189);
-}
-#g-lede-Artboard_1 .g-pstyle8 {
-	font-weight:bold;
-	color:rgb(13,18,58);
-}
-#g-lede-Artboard_1 .g-pstyle9 {
-	font-style:italic;
-	text-align:center;
-	color:rgb(253,249,192);
-}
+        font-family:georgia,'times new roman',times,serif;
+        line-height:29px;
+        filter:alpha(opacity=100);
+        -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        opacity:1;
+        letter-spacing:0em;
+        font-size:24px;
+        text-align:left;
+        color:rgb(0,0,0);
+        text-transform:none;
+        padding-bottom:0;
+        padding-top:0;
+        mix-blend-mode:normal;
+        font-style:normal;
+        height:auto;
+        position:static;
+    }
+    #g-lede-Artboard_1 .g-pstyle0 {
+        text-align:center;
+        font-size: 23px;
+    }
+    #g-lede-Artboard_1 .g-pstyle1 {
+        font-weight:bold;
+        line-height:24px;
+        height:24px;
+        filter:alpha(opacity=90);
+        -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+        opacity:0.9;
+        font-size:20px;
+        color:rgb(255,255,255);
+    }
+    #g-lede-Artboard_1 .g-pstyle2 {
+        font-weight:bold;
+        line-height:24px;
+        font-size:20px;
+        color:rgb(255,255,255);
+    }
+    #g-lede-Artboard_1 .g-pstyle3 {
+        font-weight:bold;
+        line-height:24px;
+        height:24px;
+        font-size:20px;
+        color:rgb(255,255,255);
+    }
+    #g-lede-Artboard_1 .g-pstyle4 {
+        font-style:italic;
+        line-height:24px;
+        font-size:20px;
+        text-align:center;
+        color:rgb(96,40,146);
+    }
+    #g-lede-Artboard_1 .g-pstyle5 {
+        font-style:italic;
+        line-height:24px;
+        font-size:20px;
+        text-align:center;
+        color:rgb(245,176,123);
+    }
+    #g-lede-Artboard_1 .g-pstyle6 {
+        text-align:center;
+        color:rgb(255,255,255);
+        font-size: 23px;
+
+    }
+    #g-lede-Artboard_1 .g-pstyle7 {
+        font-weight:bold;
+        line-height:24px;
+        font-size:20px;
+        color:rgb(13,18,58);
+    }
+    #g-lede-Artboard_1 .g-pstyle8 {
+        font-style:italic;
+        line-height:24px;
+        font-size:20px;
+        text-align:center;
+        color:rgb(231,197,189);
+    }
+    #g-lede-Artboard_1 .g-pstyle9 {
+        font-style:italic;
+        line-height:24px;
+        font-size:20px;
+        text-align:center;
+        color:rgb(253,249,192);
+    }
+    #g-lede-Artboard_1 .g-pstyle10 {
+        text-align:center;
+        color:rgb(30,27,58);
+        font-size: 23px;
+    }
+
 
 body {
     background-color: black;
@@ -140,7 +168,7 @@ article {
 #g-lede-Artboard_1 .g-pstyle0 {
 	padding: 20px;
     font-family: Georgia,serif;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 30px;
     background: #D7F2C0;
     box-shadow: 0 2px 5px 0 rgb(9 15 48 / 33%);
@@ -149,10 +177,10 @@ article {
     opacity: 90%;
 }
 
-#g-lede-Artboard_1 .step1 p {
+#g-lede-Artboard_1 #g-ai0-9 p {
 	padding: 20px;
     font-family: Georgia,serif;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 30px;
     background: #98dbf5;
     box-shadow: 0 2px 5px 0 rgb(9 15 48 / 33%);
@@ -161,10 +189,10 @@ article {
     opacity: 90%;
 }
 
-#g-lede-Artboard_1 .step4 p {
+#g-lede-Artboard_1 #g-ai0-32 p {
     padding: 20px;
     font-family: Georgia,serif;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 30px;
     background: #95378C;
     box-shadow: 0 2px 5px 3px rgb(4 8 34 / 71%);
@@ -173,10 +201,10 @@ article {
     opacity: 90%;
 }
 
-#g-lede-Artboard_1 .step6 p {
+#g-lede-Artboard_1 #g-ai0-42 p {
     padding: 20px;
     font-family: Georgia,serif;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 30px;
     background: #2C1662;
     box-shadow: 0 2px 5px 3px rgb(4 8 34 / 71%);
@@ -185,10 +213,10 @@ article {
     opacity: 90%;
 }
 
-#g-lede-Artboard_1 .step8 p {
+#g-lede-Artboard_1 #g-ai0-49 p {
     padding: 20px;
     font-family: Georgia,serif;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 30px;
     background: #0B1236;
     box-shadow: 0 2px 5px 3px rgb(4 8 34 / 71%);
@@ -197,10 +225,10 @@ article {
     opacity: 90%;
 }
 
-#g-lede-Artboard_1 .step10 p {
+#g-lede-Artboard_1 #g-ai0-60 p {
     padding: 20px;
     font-family: Georgia,serif;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 30px;
     background: #ECC4A2;
     box-shadow: 0 2px 5px 2px rgb(253 241 192 / 57%);
@@ -208,8 +236,4 @@ article {
     max-width: 470px;
     opacity: 90%;
     color: rgb(30 27 58);
-}
-
-#g-lede-Artboard_1 .step p{
-	font-size: 22px;
 }
