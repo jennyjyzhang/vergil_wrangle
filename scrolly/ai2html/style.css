@@ -65,7 +65,7 @@
 #g-lede-Artboard_1 .g-pstyle5 {
 	font-style:italic;
 	text-align:center;
-	color:rgb(9,15,48);
+	color:rgb(123,39,142);
 }
 #g-lede-Artboard_1 .g-pstyle6 {
 	font-style:italic;
@@ -108,7 +108,7 @@ article {
  
   	opacity: 0;
     max-height: 150px;
-    
+    transition-duration: .7s;
    
 }
 
@@ -116,6 +116,15 @@ article {
     margin-bottom: 50%;
 }
 
+.step.is-active {
+    opacity: 1;
+    transition-duration: .7s;
+}
+
+.step.is-active.not-active {
+    opacity: 0;
+    transition-duration: .7s;
+}
 
 .step p {
     display: flex;
@@ -145,7 +154,7 @@ article {
     font-family: Georgia,serif;
     font-size: 20px;
     line-height: 30px;
-    background: #4FC0F2;
+    background: #98dbf5;
     box-shadow: 0 2px 5px 0 rgb(9 15 48 / 33%);
     width: calc(100% - 40px);
     max-width: 470px;
@@ -198,6 +207,7 @@ article {
     width: calc(100% - 40px);
     max-width: 470px;
     opacity: 90%;
+    color: rgb(30 27 58);
 }
 
 #g-lede-Artboard_1 .step p{
