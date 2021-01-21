@@ -97,7 +97,7 @@ figure.sticky {
 	background-color: red;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 450px) {
 	#my_dataviz {
 		display: block;
 		margin: auto;
@@ -128,8 +128,8 @@ figure.sticky {
 
 	article {
 		position: relative;
-		padding-left: 43vw;
-		max-width: 26vw;
+		padding-left: 2vw;
+		max-width: 96vw;
 	}
 
 	.step {
@@ -143,7 +143,7 @@ figure.sticky {
 	.step p {
 		padding: 20px;
 		font-family: Georgia, serif;
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 30px;
 		background: hsla(0, 0%, 100%, .9);
 		box-shadow: 0 2px 5px 0 #e4e4e4;

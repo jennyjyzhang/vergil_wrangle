@@ -53,7 +53,7 @@ $(document).ready(function () {
 
 	if ($(window).width() < 450) {
 		d3.selectAll('svg').attr("transform", "rotate(90)");
-		//d3.selectAll('g.tick').attr("transform", "rotate(-90)");
+		d3.selectAll('.tick').attr("transform", "rotate(-90)");
 	}
 
 });
@@ -209,7 +209,7 @@ function render(margin, svg, width, height) {
 			// 3. bind scrollama event handlers (this can be chained like below)
 			scroller.setup({
 				step: '#scrolly-side article .step',
-				offset: 0.67,
+				offset: 0.9,
 				debug: false
 			})
 				.onStepEnter(handleStepEnter)
