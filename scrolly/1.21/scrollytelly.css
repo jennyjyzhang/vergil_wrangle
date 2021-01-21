@@ -9,10 +9,7 @@ body {
 
 #scrolly-side .scrolly {
 	position: relative;
-	max-width: 80vw;
-	margin: 3rem auto;
 	background-color: #2B2F77;
-	padding: 1rem;
 }
 
 p {
@@ -113,10 +110,7 @@ figure.sticky {
 
 	#scrolly-side .scrolly {
 		position: relative;
-		max-width: 80vw;
-		margin: 3rem auto;
 		background-color: #2B2F77;
-		padding: 1rem;
 	}
 
 	p {
