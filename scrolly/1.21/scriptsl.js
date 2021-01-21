@@ -9,21 +9,22 @@ $(document).ready(function () {
 	var oldwidth = $(window).width();
 	var w = parseInt(d3.select('#my_dataviz').style('width'));
 	var h = parseInt(d3.select('#my_dataviz').style('height'));
+	console.log(w, h);
 
 	if ($(window).width() < 450) {
-		var margin = {top: .1 * h, right: .1 * w, bottom: .1 * h, left: .1 * w},
+		var margin = {top: .2 * h, right: .25 * w, bottom: .2 * h, left: .25 * w},
 			width = w - margin.left - margin.right,
 	    	height = h - margin.top - margin.bottom;
 
 		// append the svg object to the body of the page
 		svg = d3.select("#my_dataviz")
 			.append("svg")
-			.attr("width", width + margin.left + margin.right)
-			.attr("height", height + margin.top + margin.bottom)
+			.attr("width", "100%")
+			.attr("height", "100%")
 
 			.append("g")
 			.attr("transform",
-				"translate(" + "0" + "," + "0" + ")");
+				"translate(" + margin.left + "," + margin.top + ")");
 
 		d3.selectAll("svg")
 			.style("background-color", "#2B2F77");
@@ -64,7 +65,7 @@ function render(margin, svg, width, height) {
 		// X axis: scale and draw:
 		var x = d3.scaleLinear()
 			.domain([0, 24])
-			.range([0, width]);
+			.range([0, height]);
 
 		let xAxisGenerator = d3.axisBottom(x);
 		xAxisGenerator.ticks(25);
@@ -92,7 +93,7 @@ function render(margin, svg, width, height) {
 			.range([height, 0]);
 
 		let yAxisGenerator = d3.axisLeft(y);
-		yAxisGenerator.tickSize(-width);
+		yAxisGenerator.tickSize(-height);
 		yAxisGenerator.tickPadding(8);
 
 		let yAxis = svg.append("g");
